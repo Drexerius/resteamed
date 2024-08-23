@@ -1,0 +1,470 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-color: var(--Bg-Main);
+    border-radius: 5px;
+
+    margin: 0 10px;
+    padding: 15px;
+    width: 400px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font: var(--Text-HeadingMedium);
+    color: var(--Text-Main);
+    letter-spacing: 0;
+    
+    margin: 20px 0;
+    width: 100%;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;    
+    height: 100%;
+}
+
+.card .platform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    color: var(--Text-Main);
+    font: var(--Text-HeadingSmall);
+
+    margin: 0 20px 0 auto;
+}
+
+/* Sale ================================================================================ */
+
+.card .sale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--Text-Dim);
+    font: var(--Text-BodyMedium);
+
+    margin: 0 10px 0 auto;
+}
+
+.card .sale-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--Accent-Green);
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+    height: 100%;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.card .sale .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    font: var(--Text-HeadingSmall);
+    color: var(--Text-Main);
+    
+    height: 100%;
+}
+
+.card .sale .price .actual-price {
+    text-decoration: underline 1px;
+    text-underline-offset: -.45em;
+    text-decoration-skip-ink: none;
+    color: var(--Text-Dim);
+}
+
+.card .sale .price .sale-price {
+    color: var(--Accent-Green);
+}
+
+.card .heart-full {
+    display: none;
+}
+
+.card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--Text-Main);
+    background-color: #76808c1f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+
+    width: 50px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+/* Genre ================================================================================*/
+
+.container .genre-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    position: relative;
+    margin: 20px 10px;
+}
+
+.genre-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.genre-card h2 {
+    font: var(--Text-HeadingMedium);
+    color: var(--Text-Main);
+    position: absolute;
+}
+
+/* Free ================================================================================*/
+
+.price-free {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    color: var(--Text-Dim);
+    margin: 0 10px 0 auto;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--Accent-Green);
+    font: var(--Text-BodyLarge);
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    
+    padding: 5px 10px;
+    margin: 0 10px;
+    height: 40px;
+}
+
+/* Recent ================================================================================*/
+
+.recent-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    font: var(--Text-BodyMedium);
+    color: var(--Text-Main);
+    background-color: var(--Bg-Main);
+    border-radius: 5px;
+
+    margin: 0 10px;
+    padding: 15px;
+    width: 300px;
+    height: 350px;
+}
+
+.recent-card img {
+    width: 100%;
+    height: 145px;
+    margin-bottom: 15px;
+}
+
+.recent-card h2 {
+    font: var(--Text-HeadingSmall);
+    color: var(--Text-Main);
+    letter-spacing: 0;
+    
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.recent-card p {
+    font: var(--Text-BodyLarge);
+
+    width: 100%;
+    margin: 0 0 auto 0;
+}
+
+.recent-card .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.recent-card .buttons div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--Bg-Highlight);
+
+    padding: 10px 10px;
+    width: 45%;
+}
+
+.recent-card .buttons .view {
+    background-color: var(--Bg-Highlight);
+    cursor: pointer;
+}
+
+/* Top Sellers ================================================================================*/
+
+.top-seller {
+    background-color: var(--Bg-Main);
+    border-radius: 5px;
+
+    margin: 10px 10px;
+    padding: 15px;
+    width: 610px;
+    height: 130px;
+}
+
+.top-seller .top-seller-image {
+    width: 230px;
+    margin-right: 10px;
+}
+
+.top-seller .info {
+    width: 340px;
+    align-items: flex-end;
+}
+
+.top-seller h2 {
+    margin: 0 0 auto 0;
+    align-self: flex-start;
+}
+
+/* Streams ================================================================================*/
+
+.stream {
+    position: relative;
+}
+
+.stream .live {
+    position: absolute;
+    width: 60px;
+    left: 10px;
+    top: 10px;
+}
+
+.stream .pause {
+    position: absolute;
+    width: 60px;
+    left: 150px;
+    top: 65px;
+}
+
+.views {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font: var(--Text-BodyMedium);
+    color: var(--Color-BlueHi);
+
+    gap: 10px;
+}
+
+.store-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--Bg-Highlight);
+    background-color: var(--Bg-Highlight);
+    font: var(--Text-BodyMedium);
+    color: var(--Text-Main);
+    cursor: pointer;
+
+    padding: 10px 10px;
+    width: 45%;
+}
+
+/* Banner ================================================================================*/
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    font: var(--Text-BodyMedium);
+    color: var(--Text-Main);    
+    background-color: var(--Bg-Main);
+
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+    padding: 15px;
+}
+
+.banner .banner-img {
+    width: 760px;
+}
+
+.banner h2 {
+    font: var(--Text-HeadingMedium);
+    
+    margin: 0;
+    width: 100%;
+}
+
+.banner p {
+    font: var(--Text-BodyMedium);
+}
+
+.banner .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-left: 15px;
+    height: 458px;
+}
+
+.banner .images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.banner .tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    gap: 5px;
+}
+
+.banner .tags .tag, .add-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--Bg-Highlight);
+    font: var(--Text-BodyMedium);
+    color: var(--Text-Dim);
+    border-radius: 5px;
+
+    padding: 5px 10px;
+    height: 100%;
+}
+
+.banner .tags .platform {
+    margin: 0 10px 0 auto;
+}
+
+.banner .panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.banner .panel .buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--Color-Secondary);
+    font: var(--Text-BodyLarge);
+    border-radius: 5px;
+    color: white;
+    
+    padding: 13px 30px;
+    margin: 0 10px;
+}
+
+.banner .panel .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    color: var(--Text-Main);
+    font: var(--Text-HeadingSmall);
+
+    margin: 0 20px 0 auto;
+}
+
+.banner .heart-full {
+    display: none;
+    font-size: 22px;
+}
+
+.banner .heart-empty {
+    font-size: 22px;
+}
+
+.banner .wishlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid var(--Bg-Highlight);
+    background-color: var(--Bg-Highlight);
+    font: var(--Text-BodyMedium);
+    color: var(--Text-Main);
+    cursor: pointer;
+    
+    padding: 10px 10px;
+    width: 120px;
+    gap: 10px;
+}

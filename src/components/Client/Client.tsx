@@ -17,7 +17,7 @@ const Client = () => {
                 <div className="client-menu">
                     <RiMenu2Line className="client-menu-icon"/>
                 </div>
-                <div className="arrows">
+                <div className="client-arrows">
                     <button className="left-arrow">
                         <img src={arrowleft} alt="arrow-left" />
                     </button>

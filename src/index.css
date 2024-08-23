@@ -41,7 +41,7 @@ body {
     --StoreDarkerGray: #1B2838;
     --StoreDarkestGray: #000F18;
 
-    --Gradient-StoreBackground: linear-gradient(180deg, var(--StoreDarkGray) 0%, var(--StoreDarkerGray) 80%);
+    --Gradient-StoreBackground: linear-gradient(0deg, var(--StoreDarkGray) 0%, var(--StoreDarkestGray) 80%);
     --Gradient-LibraryBackground: radial-gradient(farthest-corner at 40px 40px,#3D4450 0%, #23262E 80%);
 
     --Color-Blue: #1A9FFF;

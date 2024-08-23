@@ -11,7 +11,7 @@ section {
     height: 60px;
 }
 
-.arrows {
+.client-arrows {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,7 +23,7 @@ section {
     margin: 0 20px;
 }
 
-.arrows button {
+.client-arrows button {
     background: none;
     border: none;
     cursor: pointer;

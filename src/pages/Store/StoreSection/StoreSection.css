@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100%;
+    margin: 20px 8%;
+}
+
+.slider-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+}
+
+.slider-header h2 {
+    font: var(--Text-HeadingSmall);
+    color: var(--Text-Main);
+    letter-spacing: 1px;
+}
+
+.slider-header button {
+    background: none;
+    border: 1px solid #76808c31;
+    border-radius: 5px;
+    color: var(--Text-Dim);
+    cursor: pointer;
+
+    padding: 5px 10px;
+}
