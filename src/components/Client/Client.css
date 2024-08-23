@@ -1,0 +1,167 @@
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--Bg-Main);
+    user-select: none;
+    
+    width: 100%;
+    height: 60px;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    height: 100%;
+    margin: 0 20px;
+}
+
+.arrows button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 100%;
+    margin-right: 20px;
+}
+
+section nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    
+    height: 100%;
+    margin: 0 auto 0 20px
+}
+
+section nav div {
+    font: var(--Text-HeadingSmall);
+    color: var(--Text-Main);
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section nav div:hover {
+    background-color: var(--Bg-Hover);
+    transition: ease 500ms;
+}
+
+/* Profile ================================================================================*/
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-right: 50px;
+}
+
+.profile button {
+    background-color: var(--Bg-Highlight);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.profile .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--Bg-Highlight);
+    border-radius: 5px;    
+    cursor: pointer;
+
+    height: 45px;
+    padding: 0 10px;
+}
+
+.profile .username {
+    color: var(--Text-Main);
+    font: var(--Text-BodyLarge);
+
+    margin: 0 10px;
+    padding-top: 5px;
+}
+
+.profile .balance {
+    color: var(--Text-Dim);
+    
+    padding-top: 5px;
+}
+
+.profile .arrow-down {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+/* Menu ================================================================================*/
+
+.client-menu {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    height: 100%;
+    margin: 0 30px;
+}
+
+.client-menu-icon {
+    height: 100%;
+    width: 30px;
+}
+
+.client-user-menu {
+    display: none;
+
+    margin-right: 30px;
+}
+
+/* Media ================================================================================*/
+
+@media (max-width: 1200px) {
+    section nav div {
+        padding: 0 20px;
+    }
+    .profile {
+        display: none;
+    }
+    .client-user-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) {
+    section nav, .profile, .arrows {
+        display: none;
+    }
+    .logo {
+        margin: 0 10px 0 20px;
+    }
+    .client-user-menu, .client-menu {
+        display: flex;
+    }
+}

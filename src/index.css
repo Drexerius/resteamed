@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+}
+
+:root {
+    --Text-HeadingLarge: normal 700 26px/1.4 'Motiva Sans', Arial, Sans-serif;
+    --Text-HeadingMedium: normal 700 22px/1.4 'Motiva Sans', Arial, Sans-serif;
+    --Text-HeadingSmall: normal 700 18px/1.4 'Motiva Sans', Arial, Sans-serif;
+    --Text-BodyLarge: normal 400 16px/1.4 'Motiva Sans', Arial, Sans-serif;
+    --Text-BodyMedium: normal 400 14px/1.4 'Motiva Sans', Arial, Sans-serif;
+    --Text-BodySmall: normal 400 12px/1.4 'Motiva Sans', Arial, Sans-serif;
+
+    --Text-Main: #f3f3f3;
+    --Text-Dim: #76808C;
+
+    --Bg-Main: #0E141B;
+    --Bg-Highlight: #1E2329;
+    --Bg-Hover: #313843;
+    --Bg-Secondary: #14344B;
+    --Bg-Tertiary: #212B45;
+
+    --Color-Primary: #66C0F4;
+    --Color-Secondary: #4B619B;
+
+    --Accent-Green: #A1CD44;
+    --Accent-Red: #CD5444;
+    --Accent-Yellow: #C1B15F;
+
+	--StoreLightestGray: #CCD8E3;
+    --StoreLighterGray: #A7BACC;
+    --StoreLightGray: #7C8EA3;
+    --StoreGray: #4e697d;
+    --StoreDarkGray: #2A475E;
+    --StoreDarkerGray: #1B2838;
+    --StoreDarkestGray: #000F18;
+
+    --Gradient-StoreBackground: linear-gradient(180deg, var(--StoreDarkGray) 0%, var(--StoreDarkerGray) 80%);
+    --Gradient-LibraryBackground: radial-gradient(farthest-corner at 40px 40px,#3D4450 0%, #23262E 80%);
+
+    --Color-Blue: #1A9FFF;
+    --Color-BlueHi: #00BBFF;
+    --Color-Green: #5ba32b;
+    --Color-GreenHi: #59BF40;
+    --Color-Orange: #E35E1C;
+    --Color-Red: #D94126;
+    --Color-RedHi: #EE563B;
+    --Color-DustyBlue: #417a9b;
+    --Color-LightBlue: #B3DFFF;
+    --Color-Yellow: #FFC82C;
+    --Color-ChalkyBlue: #66C0F4;
+
+    --Background-LightSofter: #6998bb24;
+    --Background-LightSoft: #3b5a7280;
+    --Background-LightMedium: #678BA670;
+    --Background-LightHard: #93B8D480;
+    --Background-LightHarder: #aacce6a6;
+}
