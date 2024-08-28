@@ -31,15 +31,15 @@ const Header = () => {
                     </button>
                 </form>
                 <div className="extra-small">
-                    <div className="wishlist-menu">
+                    <button className="wishlist-menu">
                         <CiStar className="wishlist-icon"/>
-                    </div>
-                    <div className="cart-menu">
+                    </button>
+                    <button className="cart-menu">
                         <FaShoppingCart className="cart-icon"/>
-                    </div>
-                    <div className="settings">
+                    </button>
+                    <button className="settings">
                         <img src={settings} alt="settings" />
-                    </div>
+                    </button>
                 </div>
             </header>
         </>

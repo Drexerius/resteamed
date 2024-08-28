@@ -15,7 +15,7 @@ type CardProps = {
 const Card = ({ title, object } : CardProps) => {
     return (title === "Featured") ? (
         <>
-            <div className="banner">
+            <div className="banner card">
                 <img src={object.image} alt="banner-image" className='banner-image'/>
                 <div className="info">
                     <h2>{object.title}</h2>
@@ -41,11 +41,11 @@ const Card = ({ title, object } : CardProps) => {
                         <div className="platform"><img src={windows} alt="windows"/></div>
                     </div>
                     <div className="panel">
-                        <div className="wishlist">
+                        <button className="wishlist">
                             Wishlist
                             <MdFavorite className="heart-full"/>
                             <MdFavoriteBorder className="heart-empty"/>
-                        </div>
+                        </button>
                         {
                             (object.sale) ? (
                             <>
@@ -78,13 +78,13 @@ const Card = ({ title, object } : CardProps) => {
     ) : 
     (title == "Recently Updated") ? 
     (
-        <div className="recent-card">
+        <div className="card recent-card">
             <img src={object.image} alt="card-image" />
             <h2>{object.title}</h2>
             <p className="description">{object.recent?.description}</p>
             <div className="buttons">
-                <div className="status">{object.recent?.status}</div>
-                <div className="view">View Updates</div>
+                <button className="status">{object.recent?.status}</button>
+                <button className="view">View Updates</button>
             </div>
         </div>
     ) : //otherwise universal cards
@@ -135,7 +135,7 @@ const Card = ({ title, object } : CardProps) => {
                     }
                     { // Buttons right corner
                         (object.price == "Free") ? (
-                            <div className="play">Play Now</div>
+                            <button className="play">Play Now</button>
                         ) : 
                         (object.price) ? (
                             (                            
@@ -146,7 +146,7 @@ const Card = ({ title, object } : CardProps) => {
                             )
                         ) :
                         (title == "Games Streaming Now") ? (
-                            <div className="store-page">Store Page</div>
+                            <button className="store-page-button">Store Page</button>
                         ) : 0
                     }
                 </div>

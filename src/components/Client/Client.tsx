@@ -41,14 +41,14 @@ const Client = () => {
                     <button className="notifications">
                         <img src={notifications} alt="notifications" />
                     </button>
-                    <div className="user">
+                    <button className="user">
                         <img src={juxt} alt="user" />
                         <span className="username">Juxtopposed</span>
                         <span className="balance">$5.25</span>
                         <span className="arrow-down">
                             <img src={arrowdown} alt="arrow-down" />
                         </span>
-                    </div>
+                    </button>
                 </div>
                 <div className="client-user-menu">
                     <img src={juxt} alt="juxt" />

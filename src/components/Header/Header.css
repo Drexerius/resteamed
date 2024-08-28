@@ -38,7 +38,7 @@ header nav div {
 }
 
 header nav div:hover {
-    background-color: var(--Bg-Hover);
+    background-color: rgb(82, 100, 134);
     transition: ease 500ms;
 }
 
@@ -96,21 +96,27 @@ header .extra-small {
     margin-right: 35px;
 }
 
-header .extra-small div {
+header .extra-small button {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     color: var(--Text-Main);
     background-color: #76808c1f;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
+    transition: .3s;
+    
     width: 50px;
     height: 40px;
     padding: 0 5px;
     margin: 0 15px 0 0px;
+}
+
+header .extra-small button:hover {
+    background-color: rgb(82, 100, 134);
+    transition: .3s;
 }
 
 header .wishlist-icon {

@@ -27,6 +27,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    gap: 15px;
 }
 
 .cards-multi {
@@ -41,9 +43,17 @@
 
     color: white;
     cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
 
     height: 100%;
-    padding: 100px 10px;
+    padding: 30px 5px;
+    margin: 0 5px;
+}
+
+.slider-arrows:hover {
+    background: var(--StoreDarkestGray);
+    transition: .3s;
 }
 
 .slider-arrows .arrow-left, .slider-arrows .arrow-right {
@@ -55,6 +65,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    user-select: none;
 
     height: 100%;
 }

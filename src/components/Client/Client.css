@@ -69,6 +69,7 @@ section nav div:hover {
     justify-content: space-between;
 
     margin-right: 50px;
+    gap: 15px;
 }
 
 .profile button {
@@ -76,10 +77,15 @@ section nav div:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: .3s;
 
     width: 60px;
     height: 40px;
-    margin-right: 10px;
+}
+
+.profile button:hover {
+    background-color: var(--Bg-Hover);
+    transition: .3s;
 }
 
 .profile .user {
@@ -93,6 +99,7 @@ section nav div:hover {
     cursor: pointer;
 
     height: 45px;
+    width: auto;
     padding: 0 10px;
 }
 
@@ -112,7 +119,7 @@ section nav div:hover {
 
 .profile .arrow-down {
     margin-left: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 /* Menu ================================================================================*/

@@ -3,24 +3,37 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     background-color: var(--Bg-Main);
+    color: var(--Text-Main);
+    font: var(--Text-BodyMedium);
     border-radius: 5px;
+    /* user-select: none; */
+    transition: 0.2s ease-in-out;
 
-    margin: 0 10px;
+    margin: 0;
     padding: 15px;
     width: 400px;
 }
 
+.card:hover {
+    background-color: var(--Bg-Hover);
+    transform: scale(1.01);
+    box-shadow: 0 0 10px var(--Bg-Main);
+    transition: 0.2s ease-in-out;
+}
+
 .card img {
     width: 100%;
+    user-select: none;
 }
 
 .card h2 {
     font: var(--Text-HeadingMedium);
     color: var(--Text-Main);
     letter-spacing: 0;
+    user-select: text;
     
     margin: 20px 0;
     width: 100%;
@@ -51,10 +64,35 @@
 
     color: var(--Text-Main);
     font: var(--Text-HeadingSmall);
+    user-select: text;
 
     margin: 0 20px 0 auto;
 }
 
+.card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--Text-Main);
+    /* background-color: #76808c1f; */
+    background-color: var(--Bg-Highlight);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    transition: 0.2s ease-in-out;
+
+    width: 50px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.card button:hover {
+    box-shadow: 0 0 5px gray;
+    transition: 0.2s ease-in-out;
+}
 /* Sale ================================================================================ */
 
 .card .sale {
@@ -112,23 +150,6 @@
     display: none;
 }
 
-.card button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: var(--Text-Main);
-    background-color: #76808c1f;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 22px;
-
-    width: 50px;
-    height: 40px;
-    padding: 0 5px;
-}
-
 /* Genre ================================================================================*/
 
 .container .genre-card {
@@ -141,10 +162,11 @@
     cursor: pointer;
 
     position: relative;
-    margin: 20px 10px;
 }
 
 .genre-card img {
+    user-select: none;
+
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -168,7 +190,7 @@
     margin: 0 10px 0 auto;
 }
 
-.play {
+button.play {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,47 +201,35 @@
     color: black;
     font-weight: bold;
     
-    padding: 5px 10px;
+    padding: 6px 10px 5px 10px;
     margin: 0 10px;
     height: 40px;
+    width: auto;
 }
 
 /* Recent ================================================================================*/
 
 .recent-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    
-    font: var(--Text-BodyMedium);
-    color: var(--Text-Main);
-    background-color: var(--Bg-Main);
-    border-radius: 5px;
-
-    margin: 0 10px;
-    padding: 15px;
     width: 300px;
-    height: 350px;
+    min-height: 350px;
+    gap: 10px;
 }
 
 .recent-card img {
     width: 100%;
     height: 145px;
-    margin-bottom: 15px;
 }
 
 .recent-card h2 {
     font: var(--Text-HeadingSmall);
-    color: var(--Text-Main);
-    letter-spacing: 0;
-    
-    margin-bottom: 10px;
+
+    margin: 0;
     width: 100%;
 }
 
 .recent-card p {
     font: var(--Text-BodyLarge);
+    user-select: text;
 
     width: 100%;
     margin: 0 0 auto 0;
@@ -234,31 +244,39 @@
     width: 100%;
 }
 
-.recent-card .buttons div {
+.recent-card .buttons button {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    
     border: 1px solid var(--Bg-Highlight);
+    font: var(--Text-BodyMedium);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 
     padding: 10px 10px;
     width: 45%;
 }
 
+.recent-card .buttons button:hover {
+    box-shadow: 0 0 5px gray;
+    transition: 0.2s ease-in-out;
+}
+
+.recent-card .buttons .status {
+    background-color: var(--Bg-Main);
+}
+
 .recent-card .buttons .view {
     background-color: var(--Bg-Highlight);
-    cursor: pointer;
 }
 
 /* Top Sellers ================================================================================*/
 
 .top-seller {
-    background-color: var(--Bg-Main);
-    border-radius: 5px;
-
-    margin: 10px 10px;
-    padding: 15px;
+    flex-wrap: wrap;
+    
     width: 610px;
     height: 130px;
 }
@@ -310,7 +328,7 @@
     gap: 10px;
 }
 
-.store-page {
+button.store-page-button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -333,19 +351,29 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: nowrap;
 
     font: var(--Text-BodyMedium);
-    color: var(--Text-Main);    
+    color: var(--Text-Main);
     background-color: var(--Bg-Main);
 
     width: 100%;
     height: 100%;
-    margin: 0 10px;
     padding: 15px;
+    gap: 15px;
 }
 
-.banner .banner-img {
-    width: 760px;
+.banner .banner-image {
+    height: 100%;
+}
+
+.banner .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    height: 458px;
 }
 
 .banner h2 {
@@ -359,24 +387,17 @@
     font: var(--Text-BodyMedium);
 }
 
-.banner .info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    margin-left: 15px;
-    height: 458px;
-}
-
 .banner .images {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-
-    gap: 7px;
+    
+    gap: 10px;
+}
+.banner .images img {
+    width: 46%;
 }
 
 .banner .tags {
@@ -389,16 +410,16 @@
     gap: 5px;
 }
 
-.banner .tags .tag, .add-tag {
+.banner .tag, .add-tag {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    
     background-color: var(--Bg-Highlight);
-    font: var(--Text-BodyMedium);
     color: var(--Text-Dim);
     border-radius: 5px;
+    cursor: pointer;
 
     padding: 5px 10px;
     height: 100%;
@@ -426,6 +447,7 @@
     font: var(--Text-BodyLarge);
     border-radius: 5px;
     color: white;
+    cursor: pointer;
     
     padding: 13px 30px;
     margin: 0 10px;
