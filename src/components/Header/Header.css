@@ -76,7 +76,7 @@ header .search button {
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    
+
     width: 48px;
     height: 48px;
     padding: 0 10px;
@@ -100,14 +100,14 @@ header .extra-small button {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     color: var(--Text-Main);
     background-color: #76808c1f;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
-    
+
     width: 50px;
     height: 40px;
     padding: 0 5px;
@@ -177,13 +177,16 @@ header .menu span {
     header nav {
         display: none;
     }
+
     header nav div {
         padding: 0 10px;
     }
+
     header .search {
         width: 100px;
         margin: 0 150px 0 auto;
     }
+
     header .menu {
         display: flex;
     }
@@ -193,9 +196,11 @@ header .menu span {
     header .search {
         margin: 0 0 0 auto;
     }
+
     header .search input {
         display: none;
     }
+
     header .search button {
         border-radius: 5px;
     }

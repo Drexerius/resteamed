@@ -4,19 +4,13 @@ import { Client, Footer } from "./components";
 
 export default function App() {
   return (
-  <>
-    <Client />
-    <Routes>
-      <Route 
-        path="/"
-        element={<Store />}
-      />
-      <Route 
-        path="/library"
-        element={<Library />}
-      />
-    </Routes>
-    <Footer />
-  </>
+    <>
+      <Client />
+      <Routes>
+        <Route path="/" element={<Store />} />
+        <Route path="/library" element={<Library />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }

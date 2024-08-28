@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
     background-color: var(--Bg-Highlight);
 
     width: 100%;
@@ -86,28 +86,35 @@ footer .socials div {
     footer {
         padding: 0 10px;
     }
+
     footer div.corporation {
         width: 350px;
         font: var(--Text-BodySmall);
     }
+
     footer .corporation img {
         height: 40px;
     }
+
     footer .links {
         gap: 20px;
     }
+
     footer .socials {
         flex-direction: column;
     }
 }
+
 @media (max-width: 800px) {
     footer div.corporation {
         width: 200px;
         margin-right: 5px;
     }
+
     footer .corporation img {
         height: 20px;
     }
+
     footer div.corporation p {
         font-size: 10px;
     }

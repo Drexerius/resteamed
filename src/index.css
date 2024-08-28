@@ -33,7 +33,7 @@ body {
     --Accent-Red: #CD5444;
     --Accent-Yellow: #C1B15F;
 
-	--StoreLightestGray: #CCD8E3;
+    --StoreLightestGray: #CCD8E3;
     --StoreLighterGray: #A7BACC;
     --StoreLightGray: #7C8EA3;
     --StoreGray: #4e697d;
@@ -42,7 +42,7 @@ body {
     --StoreDarkestGray: #000F18;
 
     --Gradient-StoreBackground: linear-gradient(0deg, var(--StoreDarkGray) 0%, var(--StoreDarkestGray) 80%);
-    --Gradient-LibraryBackground: radial-gradient(farthest-corner at 40px 40px,#3D4450 0%, #23262E 80%);
+    --Gradient-LibraryBackground: radial-gradient(farthest-corner at 40px 40px, #3D4450 0%, #23262E 80%);
 
     --Color-Blue: #1A9FFF;
     --Color-BlueHi: #00BBFF;
