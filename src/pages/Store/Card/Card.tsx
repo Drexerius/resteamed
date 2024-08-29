@@ -58,7 +58,7 @@ const Card = ({ title, object }: CardProps) => {
                 <span className="actual-price">{object.price}</span>
               </div>
             )}
-            <div className="buy">Buy Now</div>
+            <button className="buy">Buy Now</button>
           </div>
         </div>
       </div>

@@ -9,8 +9,9 @@
     color: var(--Text-Main);
     font: var(--Text-BodyMedium);
     border-radius: 5px;
-    /* user-select: none; */
     transition: 0.2s ease-in-out;
+
+    animation: fadeIn 1s ease-in-out;
 
     margin: 0;
     padding: 15px;
@@ -454,6 +455,8 @@ button.store-page-button {
 
     padding: 13px 30px;
     margin: 0 10px;
+    width: auto;
+    height: auto;
 }
 
 .banner .panel .price {

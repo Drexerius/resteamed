@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
 
+    position: relative;
+
     height: 100%;
     width: 100%;
     max-width: 1400px;
@@ -62,6 +64,10 @@
     width: 20px;
 }
 
+.slider-arrows .arrow-left {
+    padding-left: 5px;
+}
+
 .state {
     display: flex;
     flex-direction: row;
@@ -75,3 +81,22 @@
 .state span {
     margin: 0 5px;
 }
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity .1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+  

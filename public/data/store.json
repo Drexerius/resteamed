@@ -9,6 +9,16 @@
           "images": ["banner2", "banner3", "banner4", "banner5"],
           "tags": ["Souls-like", "RPG", "Dark Fantasy", "Open-world"]
         }
+      },
+      {
+        "image": "banner1",
+        "title": "Elden Ring",
+        "price": "$59.99",
+        "banner": {
+          "description": "THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+          "images": ["banner2", "banner3", "banner4", "banner5"],
+          "tags": ["Souls-like", "RPG", "Dark Fantasy", "Open-world"]
+        }
       }
     ],
     "Special Offers": [
@@ -30,6 +40,56 @@
           "date": "Until Nov 6",
           "value": "-87%",
           "price": "$3.89"
+        }
+      },
+      {
+        "image": "offers3",
+        "title": "Beyond: Two Souls",
+        "price": "$19.99",
+        "sale": {
+          "date": "Only Today!",
+          "value": "-60%",
+          "price": "$7.99"
+        }
+      },
+      {
+        "image": "offers3",
+        "title": "Beyond: Two Souls",
+        "price": "$19.99",
+        "sale": {
+          "date": "Only Today!",
+          "value": "-60%",
+          "price": "$7.99"
+        }
+      },
+      {
+        "image": "offers1",
+        "title": "The Last of Us: Part 1",
+        "price": "$59.99",
+        "sale": {
+          "date": "Until Nov 2",
+          "value": "-20%",
+          "price": "$47.99"
+        }
+      },
+      {
+        "image": "offers2",
+        "title": "Iratus: Lord of the Dead",
+        "price": "$29.99",
+        "sale": {
+          "date": "Until Nov 6",
+          "value": "-87%",
+          "price": "$3.89"
+        }
+      },
+      {
+        "image": "offers1",
+        "title": "The Last of Us: Part 1",
+        "price": "$59.99",
+        "sale": {
+          "date": "Until Nov 2",
+          "value": "-20%",
+          "price": "$47.99"
         }
       },
       {
@@ -63,6 +123,14 @@
       {
         "image": "genres5",
         "title": "Co-Op"
+      },
+      {
+        "image": "genres4",
+        "title": "Anime"
+      },
+      {
+        "image": "genres5",
+        "title": "Co-Op"
       }
     ],
     "Free-to-Play Games": [
@@ -74,6 +142,21 @@
       {
         "image": "free2",
         "title": "Halo Infinite",
+        "price": "Free"
+      },
+      {
+        "image": "free3",
+        "title": "Team Fortress 2",
+        "price": "Free"
+      },
+      {
+        "image": "free2",
+        "title": "Halo Infinite",
+        "price": "Free"
+      },
+      {
+        "image": "free1",
+        "title": "Destiny 2",
         "price": "Free"
       },
       {
@@ -173,6 +256,46 @@
           "value": "-60%",
           "price": "$23.99"
         }
+      },
+      {
+        "image": "top3",
+        "title": "Call of Duty®",
+        "price": "$69.99"
+      },
+      {
+        "image": "top4",
+        "title": "Fallout 76",
+        "price": "$69.99",
+        "sale": {
+          "date": "",
+          "value": "-80%",
+          "price": "$7.99"
+        }
+      },
+      {
+        "image": "top1",
+        "title": "Baldur’s Gate",
+        "price": "$59.99"
+      },
+      {
+        "image": "top2",
+        "title": "Rust",
+        "price": "$39.99"
+      },
+      {
+        "image": "top6",
+        "title": "Red Dead Redemption 2",
+        "price": "$69.99",
+        "sale": {
+          "date": "",
+          "value": "-60%",
+          "price": "$23.99"
+        }
+      },
+      {
+        "image": "top5",
+        "title": "Metal Gear & Metal Gear 2: Solid Snake",
+        "price": "$19.99"
       }
     ],
     "Under $5": [
@@ -216,6 +339,21 @@
       {
         "image": "stream2",
         "title": "Warhammer: Vermintide II",
+        "viewers": "20K"
+      },
+      {
+        "image": "stream3",
+        "title": "Euro Truck Simulator 2",
+        "viewers": "20K"
+      },
+      {
+        "image": "stream2",
+        "title": "Warhammer: Vermintide II",
+        "viewers": "20K"
+      },
+      {
+        "image": "stream1",
+        "title": "Cities Skylines II",
         "viewers": "20K"
       },
       {

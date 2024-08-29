@@ -63,7 +63,7 @@ const Store = () => {
 
   const sections = [...Object.keys(storeData || {})];
   const cardsPerPage: { [key: string]: number } = {
-    Featured: 1,
+    "Featured": 1,
     "Special Offers": 3,
     "Browse Steam": 5,
     "Free-to-Play Games": 3,
@@ -71,7 +71,7 @@ const Store = () => {
     "New & Trending": 3,
     "Top Sellers": 6,
     "Under $5": 3,
-    "Streaming Games Now": 3,
+    "Games Streaming Now": 3,
   };
 
   return isLoading ? (

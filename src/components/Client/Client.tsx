@@ -36,7 +36,7 @@ const Client = () => {
             />
           </button>
           <button className="user">
-            <img src="src/assets/client/user.png" alt="user" />
+            <img src="src/assets/client/juxt.png" alt="user" />
             <span className="username">Juxtopposed</span>
             <span className="balance">$5.25</span>
             <span className="arrow-down">
